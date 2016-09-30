@@ -41,7 +41,7 @@ func handlePacket(packet gopacket.Packet) {
 	applicationLayer := packet.ApplicationLayer()
 	if applicationLayer != nil {
 		fmt.Println("Application layer/Payload found.")
-		fmt.Printf("%s\n", applicationLayer.Payload())
+		//fmt.Printf("%s\n", applicationLayer.Payload())
 	}
 	fmt.Println("")
 
